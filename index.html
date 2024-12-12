@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Interview Quetion</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+1 What is javaScript
+. javascript is Interpreted Language:Single Thred Language.
+. Dynamic Typing:JavaScript is loosely typed, meaning variables can hold different types of data at different times.
+
+
+
+
+2 what is data type
+
+. there are primative and non-primative
+. primative data type is 7 ( number, string, bulean, null, Symbol ,float,bigint);
+. non primative is has refarence in globle exegution context ( array,object,funtion);
+
+
+
+console.log(typeof 42); // "number"
+console.log(typeof "hello"); // "string"
+console.log(typeof true); // "boolean"
+console.log(typeof undefined); // "undefined"
+console.log(typeof null); // "object" (this is a known quirk in JavaScript)
+console.log(typeof {}); // "object"
+console.log(typeof []); // "object"
+console.log(typeof function(){}); // "function"
+
+
+
+3 different between null and undifind
+
+Meaning: A variable is declared but has not been assigned a value yet
+
+let x; // Variable is declared but not assigned
+console.log(x); // Output: undefined
+
+function greet() {}
+console.log(greet()); // Output: undefined (function has no return value)
+
+let obj = {};
+console.log(obj.name); // Output: undefined (property does not exist)
+
+
+
+Meaning: Represents the intentional absence of any object value.
+
+let y = null; // Variable is explicitly set to have no value
+console.log(y); // Output: null
+
+let person = { name: "Alice" };
+person.name = null; // Explicitly clear the value of the property
+console.log(person.name); // Output: null
+
+
+console.log(undefined == null);  // true (type coercion makes them equal)
+
+4 different between primative and non primative
+
+.These are the basic data types that represent single values.
+. Immutable: Once a value is assigned, it cannot be changed (although you can reassign the variable itself). 
+
+Non-Primitive (Reference) Data Types
+. These are data types that can store collections of values or more complex entities.
+. Mutable: Their content (properties or elements) can be changed.
+
+5 what are variable
+
+. variable are three type var, let, conts.
+. let salman; => it is call variable declaration/
+. let salman="man" => it is call variable
+
+let x;         // Declaration
+x = 10;        // Assignment
+console.log(x); // Output: 10
+
+6 different between var let conts
+
+. var is globle and function Scope. reassigned and re-declared within the same scope. undifind
+. let is block scope. reassigned but cannot be re-declared in the same scope. temporal dead zone
+. const is block scope.Cannot be reassigned or re-declared.
+. Feature	             var	      let	          const
+ Scope	         Function-scoped	Block-scoped	Block-scoped
+ Reassignable	  Yes	             Yes	          No
+ Re-declarable	  Yes	             No	              No
+ Initialization	  Optional	        Optional	     Mandatory
+ Hoisting	      Yes 	             Yes (temporal dead zone)	Yes (temporal dead zone)
+            (initialized as undefined)
+
+
+
+7 what is scope
+
+
+
+8 what is lexical scop
+
+
+
+9 what is hoisting
+
+
+10 how is javascript work
+
+. there is a call-stack
+. in call-stack we have a globle execution context
+
+
+11 oprator in javascript
