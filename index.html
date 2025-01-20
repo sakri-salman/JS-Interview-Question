@@ -102,7 +102,7 @@ console.log(x); // Output: 10
 
 7 what is scope
 
-
+. visibility and accessibility of variables within a specific part of your code
 
 8 what is lexical scop
 
@@ -110,6 +110,7 @@ console.log(x); // Output: 10
 
 9 what is hoisting
 
+. variable and function declarations are moved to the top of their scope before code execution
 
 10 how is javascript work
 
@@ -117,4 +118,179 @@ console.log(x); // Output: 10
 . in call-stack we have a globle execution context
 
 
-11 oprator in javascript
+
+11 oprator in javascript  (see in operator folder);
+
+
+
+12 funtion  Statement , Expression, Declaration
+
+
+. function a(){} ===>is called funtion Statement or Declaration Both are same
+. const a=funtion (){}  ===> is called funtion Expression
+. funtion statement or declaration are hoisted and funtion expression are not hoisted
+
+13 what is Anonymous funtion
+
+. function() { } ===> a funtion statement or Declaration with out name is called anonymous funtion
+. used as an argument, or returned by another function 
+  const a =funtion (){}  ==> it is argument
+  const a = funtion(){
+    return funtion(){}   ==> it is return by another funtion
+  }
+
+
+  14 what is name funtion expression
+  . funtion a(){} it is called named funtion 
+  . const a=funtion a(){} it is called funtion 
+
+  15 Different between parameter and arguments
+  . the funtion statement or expression declared is called parameter (a1, a2) it is called local variable
+  . when funtion called by its name and give value a(1,2) it is called arguments
+
+
+  16 what is first class Function / first class citizen
+  . both are same 
+  . passing funtion inside another function as a argument is called first class function a(xyz)
+  . function can be return by another funtion is called first class funtion
+
+
+  17 Arrow Function 
+
+
+**  Synchronous And Asynchronus
+Synchronus: The Code is Executed line by line
+Asynchronus: It Executed Independently.
+
+
+*** What is Event Loop 
+
+it is a mechanism to execute asynchronus code. it continuouly Check the call Stack is emty , when call stack is emty it take out task from callback queue
+
+
+*** what is a closure in 
+
+to access its lexical scope    
+
+child function to keep environment of its perent scope evenafter the parents funtion has already executed.
+
+
+*** promises 
+
+handle asynchronus task (task is completed or not);
+promises have Pending, Fuifilled and Rejected;
+use  new Promise(), resolve , reject()
+
+
+what is call(); apply()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+************************************React js
+
+
+***********what is react js 
+
+reac js is javascript library. it is easy to understatnd
+
+
+
+**********what is virtual DOM 
+
+virtual Dom has a duplicated of real dom. when any update in dom virtual dom update and it compare the real dom only update by render in real dome is process called diffing
+
+*************what is jsx
+
+it is a javascript XML
+Traspilers are used to convert jsx into javaScript
+
+************ what is conditionsl rendering *************************
+
+render component or ui by specific condition 
+
+1 if / else
+2 using ternary operator
+{logic ?  :  } 
+
+
+
+
+
+********explain props and statement
+
+props is used pass data from one component to another component
+props cannot be modified
+
+state passed within the component 
+it is modified
+
+
+
+********** what is state **************
+
+it is any object that holds some information of component it may change over lifetime of the component
+
+
+
+
+******** what is higher-order component 
+
+
+like app.js is a higher-order component it take all component.
+
+
+
+********************explain one way data binding ************
+
+data flow in one way like parent to child when parent date is update child automaticly re-render
+
+
+
+************ explain lifecycle method ***************
+
+mounting : component render is called mounting
+updating: when state of component is update is call updating
+unmounting: when delete any componet is call unmounting
+
+************ explain methods used in mounting phase****************
+
+componentwillMount()
+vthis function is invoked before the component is mounted on dom
+
+
+componentDidMount()
+function is invoked after the compoent is mounted on dom
+
+
+
+**********************what is setState()**********
+
+
+setStat() it ensure that the compoent has updated and it call re-render of component
+
+
+
+ ******************* what is useState hook ***************
+
+ using this hook we declare a state variable in function
+state variable store component data
+
+
+********************** what is useEffet hook **************
+
+
